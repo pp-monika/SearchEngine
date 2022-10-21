@@ -6,7 +6,7 @@ import time
 def mergeIndexes(index1:str,index2:str): #index1and2 are paths to lblindexes
     i1file = open(index1,'r')
     i2file = open(index2,'r')
-    temp_merge_file = "/Users/kenny/Documents/cs121/Assignment3/1500Split/lblfolder/merged_index.txt"
+    temp_merge_file = "[file directory]"
     merged_file = open(temp_merge_file, "w")
     
     temp_variable1 = next(i1file, None)
@@ -69,7 +69,7 @@ def mergeIndexesHelper(merged_index:str,unfinished_index:TextIOWrapper,line:str)
 
 
 if __name__ =="__main__":
-    file_name = "/Users/kenny/Documents/cs121/Assignment3/1500Split/lblfolder/"
+    file_name = "[file directory]"
     start_time = time.perf_counter()
 
     counter = 2
