@@ -58,10 +58,6 @@ def createList():
                 with open(name, 'w') as index_subset:
                     # sorted_index = sorted(index)
                     sorted_index = SortedDict(index)
-                    # sorted_index = OrderedDict(sorted(index.items(), key=lambda t: t[0]))
-                    # print(index)
-                    # print("\n")
-                    # print(sorted_index)
                     print("writing start")
                     index_subset.write(str(sorted_index))
 
